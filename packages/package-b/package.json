@@ -1,6 +1,6 @@
 {
   "name": "@theholocron/package-b",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component library.",
   "homepage": "https://github.com/theholocron/monorepo-react-template/tree/main/packages/package-b#readme",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
