@@ -282,7 +282,7 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
-  packages/ui:
+  packages/package-b:
     devDependencies:
       '@testing-library/jest-dom':
         specifier: 'catalog:'

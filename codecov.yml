@@ -6,7 +6,7 @@ coverage:
 
     # Set project-specific coverage targets
     project:
-      ui:
+      package-b:
         target: auto
         threshold: 1%  # PR fails if coverage drops by 1% or more
 
@@ -16,7 +16,7 @@ comment:
 
 component_management:
   individual_components:
-    - component_id: ui
-      name: "ui"
+    - component_id: package-b
+      name: "package-b"
       paths:
-        - packages/ui/**
+        - packages/package-b/**
