@@ -6,7 +6,6 @@ packages:
 catalog:
   '@commitlint/cli': ^21.2.1
   '@eslint/js': ^10.0.0
-  '@vitest/eslint-plugin': ^1.6.27
   '@semantic-release/changelog': ^7.0.0
   '@semantic-release/exec': ^7.1.0
   '@semantic-release/git': ^11.0.1
@@ -19,6 +18,7 @@ catalog:
   '@types/react-dom': ^19.2.4
   '@vitejs/plugin-react': ^5.2.0
   '@vitest/coverage-v8': ^4.1.10
+  '@vitest/eslint-plugin': ^1.6.27
   conventional-changelog-conventionalcommits: ^10.2.1
   eslint: ^10.8.1
   eslint-plugin-n: ^18.2.2
@@ -49,7 +49,7 @@ catalogs:
     '@theholocron/eslint-config': ^7.16.0
     '@theholocron/holocron-config': ^7.16.0
     '@theholocron/lint-staged-config': ^7.16.0
-    '@theholocron/prettier-config': ^7.16.0
+    '@theholocron/prettier-config': ^7.17.0
     '@theholocron/semantic-release-config': ^7.16.0
     '@theholocron/tsconfig': ^7.16.0
     '@theholocron/tsdown-config': ^7.16.0
