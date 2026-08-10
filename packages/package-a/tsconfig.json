@@ -1,9 +1,0 @@
-{
-  "display": "Package A",
-  "extends": "@theholocron/tsconfig/node-lts",
-  "compilerOptions": {
-    "outDir": "./dist"
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "dist"]
-}

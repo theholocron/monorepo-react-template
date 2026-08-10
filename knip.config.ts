@@ -11,8 +11,8 @@ const config: KnipConfig = {
 			project: ["src/**/*.ts", "*.ts"],
 		},
 		"packages/*": {
-			entry: ["src/index.ts", "tsdown.config.ts", "vitest.config.ts"],
-			project: ["src/**/*.ts", "*.ts"],
+			entry: ["src/index.ts", "vite.config.ts", "vitest.config.ts", "eslint.config.ts"],
+			project: ["src/**/*.{ts,tsx}", "*.ts"],
 		},
 	},
 	ignoreDependencies: [

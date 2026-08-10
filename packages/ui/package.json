@@ -1,8 +1,8 @@
 {
-  "name": "@theholocron/package-a",
+  "name": "@theholocron/ui",
   "version": "1.0.0",
-  "description": "Sample package.",
-  "homepage": "https://github.com/theholocron/monorepo-react-template/tree/main/packages/package-a#readme",
+  "description": "React component library.",
+  "homepage": "https://github.com/theholocron/monorepo-react-template/tree/main/packages/ui#readme",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
   "repository": {
     "type": "git",
@@ -13,49 +13,55 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "default": "./dist/index.mjs"
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.mts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
+    "build": "vite build",
     "lint": "eslint .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@codecov/rollup-plugin": "^2.0.1",
+    "@testing-library/jest-dom": "catalog:",
+    "@testing-library/react": "catalog:",
+    "@testing-library/user-event": "catalog:",
     "@theholocron/eslint-config": "catalog:configs",
     "@theholocron/prettier-config": "catalog:configs",
     "@theholocron/tsconfig": "catalog:configs",
-    "@theholocron/tsdown-config": "catalog:configs",
     "@theholocron/vitest-config": "catalog:configs",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
     "@vitest/coverage-v8": "catalog:",
+    "@vitest/eslint-plugin": "catalog:",
+    "eslint-plugin-react": "catalog:",
+    "eslint-plugin-storybook": "catalog:",
+    "jsdom": "catalog:",
     "prettier": "catalog:",
-    "tsdown": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-dts": "catalog:",
     "vitest": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "publishConfig": {
-    "access": "public",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.mts",
-        "import": "./dist/index.mjs",
-        "default": "./dist/index.mjs"
-      }
-    },
-    "main": "./dist/index.mjs",
-    "types": "./dist/index.d.mts"
+    "access": "public"
   },
   "releases": "https://github.com/theholocron/monorepo-react-template/releases",
   "wiki": "https://github.com/theholocron/monorepo-react-template/wiki"
