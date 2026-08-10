@@ -1,8 +1,8 @@
 {
-  "name": "@theholocron/monorepo-template-site",
+  "name": "@theholocron/monorepo-react-template-site",
   "version": "0.0.0",
   "private": true,
-  "description": "Docs site for monorepo-template",
+  "description": "Docs site for monorepo-react-template",
   "scripts": {
     "build": "astro build",
     "dev": "astro dev",

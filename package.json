@@ -1,12 +1,12 @@
 {
-  "name": "@theholocron/monorepo-template",
+  "name": "@theholocron/monorepo-react-template",
   "version": "1.0.0",
-  "description": "A modern NodeJS template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
-  "homepage": "https://docs.theholocron.dev/monorepo-template/",
-  "bugs": "https://github.com/theholocron/monorepo-template/issues",
+  "description": "A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
+  "homepage": "https://docs.theholocron.dev/monorepo-react-template/",
+  "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theholocron/monorepo-template.git"
+    "url": "git+https://github.com/theholocron/monorepo-react-template.git"
   },
   "license": "GPL-3.0",
   "author": "Newton Koumantzelis",
@@ -72,6 +72,6 @@
       "@commitlint/config-conventional>conventional-changelog-conventionalcommits": "7"
     }
   },
-  "releases": "https://github.com/theholocron/monorepo-template/releases",
-  "wiki": "https://github.com/theholocron/monorepo-template/wiki"
+  "releases": "https://github.com/theholocron/monorepo-react-template/releases",
+  "wiki": "https://github.com/theholocron/monorepo-react-template/wiki"
 }

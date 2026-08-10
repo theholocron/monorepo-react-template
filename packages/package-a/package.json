@@ -2,11 +2,11 @@
   "name": "@theholocron/package-a",
   "version": "1.0.0",
   "description": "Sample package.",
-  "homepage": "https://github.com/theholocron/monorepo-template/tree/main/packages/package-a#readme",
-  "bugs": "https://github.com/theholocron/monorepo-template/issues",
+  "homepage": "https://github.com/theholocron/monorepo-react-template/tree/main/packages/package-a#readme",
+  "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theholocron/monorepo-template.git"
+    "url": "git+https://github.com/theholocron/monorepo-react-template.git"
   },
   "license": "GPL-3.0",
   "author": "Newton Koumantzelis",
@@ -57,6 +57,6 @@
     "main": "./dist/index.mjs",
     "types": "./dist/index.d.mts"
   },
-  "releases": "https://github.com/theholocron/monorepo-template/releases",
-  "wiki": "https://github.com/theholocron/monorepo-template/wiki"
+  "releases": "https://github.com/theholocron/monorepo-react-template/releases",
+  "wiki": "https://github.com/theholocron/monorepo-react-template/wiki"
 }

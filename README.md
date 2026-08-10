@@ -1,33 +1,10 @@
-# `@theholocron/monorepo-template`
+# `@theholocron/monorepo-react-template`
 
 <!-- holocron:description -->
 
 A modern NodeJS template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.
 
 <!-- /holocron:description -->
-
-<!-- holocron:template-only -->
-
-## Getting Started
-
-Use the [Holocron CLI](https://github.com/theholocron/holocron) to scaffold a new monorepo. It clones the template, renames all placeholder references, wires up your vault provider, and runs `holocron setup` in one step:
-
-```bash
-npx @theholocron/cli new monorepo my-monorepo \
-  --description "My monorepo description" \
-  --homepage "https://my-monorepo.example.com" \
-  --vault doppler \
-  --agent claude
-```
-
-This will:
-
-1. Create `theholocron/my-monorepo` from this template on GitHub
-2. Replace all `monorepo-template` references with `my-monorepo` throughout the repo
-3. Run `pnpm install`
-4. Run `holocron setup` to configure branch protection, labels, workflows, and repo settings
-
-<!-- /holocron:template-only -->
 
 ## Development
 
@@ -60,4 +37,4 @@ Releases are automated via [semantic-release](https://semantic-release.gitbook.i
 
 ## Documentation
 
-Check out [The Holocron Archive](https://docs.theholocron.dev/projects/monorepo-template/) for more information.
+Check out [The Holocron Archive](https://docs.theholocron.dev/projects/monorepo-react-template/) for more information.

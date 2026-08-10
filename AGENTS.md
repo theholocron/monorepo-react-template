@@ -1,4 +1,4 @@
-# theholocron/monorepo-template — agent operating contract
+# theholocron/monorepo-react-template — agent operating contract
 
 `CLAUDE.md` is a symlink to this file, so Claude, Codex, and every other agent
 read the same rules. Put durable, repo-wide agent guidance here.
@@ -7,7 +7,7 @@ read the same rules. Put durable, repo-wide agent guidance here.
 
 ## What this repo is
 
-<description>
+A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.
 
 ## Architecture
 
