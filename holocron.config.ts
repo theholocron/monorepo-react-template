@@ -24,7 +24,7 @@ export default defineConfig({
 		{ name: "release", with: { "run-build": true } },
 		{
 			name: "deploy-docs",
-			with: { name: "monorepo-react-template" },
+			with: { name: "monorepo-react-template", "skip-content": true },
 			paths: ["docs/**"],
 		},
 	],

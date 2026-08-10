@@ -26,4 +26,5 @@ jobs:
     uses: theholocron/.github/.github/workflows/deploy-docs.yml@main
     with:
       name: monorepo-react-template
+      skip-content: true
     secrets: inherit
