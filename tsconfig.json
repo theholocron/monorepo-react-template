@@ -1,5 +1,5 @@
 {
-  "display": "Mono Repo Template",
+  "display": "Mono Repo React Template",
   "extends": "@theholocron/tsconfig/node-lts",
   "compilerOptions": {
     "outDir": "dist"
