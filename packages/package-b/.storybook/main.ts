@@ -11,25 +11,16 @@ const config: StorybookConfig = {
 		"@storybook/addon-vitest",
 		"@chromatic-com/storybook",
 	],
-	core: {
-		builder: "@storybook/builder-vite",
-		options: {
-			viteConfigPath: "../vite.config.ts",
-		},
-	},
 	docs: {
 		defaultName: "Documentation",
 	},
 	framework: "@storybook/react-vite",
 	stories: ["../src/**/*.mdx", "../src/**/*.story.@(js|jsx|mjs|ts|tsx)"],
-	async viteFinal(config) {
-		const { mergeConfig } = await import("vite");
-
-		return mergeConfig(config, {
-			optimizeDeps: {
-				include: ["react/jsx-dev-runtime", "react-dom/client"],
-			},
-		});
+	viteFinal: (config) => {
+		// vite-plugin-dts is only meaningful for the library build; it trips
+		// over missing api-extractor.json when Storybook merges vite.config.ts.
+		config.plugins = config.plugins?.filter((p) => (p as { name?: string })?.name !== "vite:dts");
+		return config;
 	},
 };
 
