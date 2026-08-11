@@ -59,6 +59,7 @@
     "eslint-plugin-react": "catalog:",
     "eslint-plugin-storybook": "catalog:",
     "jsdom": "catalog:",
+    "playwright": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:",
