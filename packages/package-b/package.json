@@ -25,6 +25,7 @@
   "scripts": {
     "build": "vite build",
     "build:storybook": "storybook build",
+    "dev": "vite",
     "lint": "eslint .",
     "start:storybook": "storybook dev -p 6006",
     "test": "vitest run --project storybook",
