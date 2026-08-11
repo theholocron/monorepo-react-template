@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:storybook": "turbo run build:storybook",
     "lint": "turbo run lint",
     "prepare": "husky",
     "release": "semantic-release",

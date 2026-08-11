@@ -26,4 +26,6 @@ jobs:
       run-unit: false
       run-storybook: true
       run-interaction: true
+      run-chromatic: true
+      chromatic-projects: '[{"tokenName":"PACKAGE_B","workingDir":"packages/package-b"}]'
     secrets: inherit
