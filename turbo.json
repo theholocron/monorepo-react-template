@@ -12,13 +12,18 @@
       "outputs": []
     },
     "test": {
-      "inputs": ["src/**", "vitest.config.ts", "package.json"],
+      "inputs": ["src/**", ".storybook/**", "vitest.config.ts", "vitest.setup.ts", "package.json"],
       "outputs": ["test-report.junit.xml"],
       "dependsOn": ["^build"]
     },
     "test:coverage": {
-      "inputs": ["src/**", "vitest.config.ts", "package.json"],
+      "inputs": ["src/**", ".storybook/**", "vitest.config.ts", "vitest.setup.ts", "package.json"],
       "outputs": ["coverage/**"],
+      "dependsOn": ["^build"]
+    },
+    "test:storybook": {
+      "inputs": ["src/**", ".storybook/**", "vitest.config.ts", "vitest.setup.ts", "package.json"],
+      "outputs": ["test-report.junit.xml"],
       "dependsOn": ["^build"]
     },
     "typecheck": {

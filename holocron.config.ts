@@ -21,6 +21,10 @@ export default defineConfig({
 	},
 	workflows: [
 		...workflows,
+		{
+			name: "test",
+			with: { "run-unit": false, "run-storybook": true, "run-interaction": true },
+		},
 		{ name: "release", with: { "run-build": true } },
 		{
 			name: "deploy-storybook",
