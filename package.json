@@ -22,11 +22,13 @@
     "release": "semantic-release",
     "test": "turbo run test",
     "test:coverage": "turbo run test:coverage",
+    "test:cypress": "turbo run test:cypress",
     "test:storybook": "turbo run test:storybook",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
     "@eslint/js": "catalog:",
     "@semantic-release/changelog": "catalog:",
     "@semantic-release/exec": "catalog:",

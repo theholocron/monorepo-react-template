@@ -16,6 +16,7 @@
       "cache": false,
       "persistent": true
     },
+    "test:cypress": {},
     "lint": {
       "inputs": ["src/**", "eslint.config.ts", "eslint.config.js"],
       "outputs": []
