@@ -53,6 +53,7 @@
     "husky": "catalog:",
     "knip": "catalog:",
     "lint-staged": "catalog:",
+    "playwright": "catalog:",
     "prettier": "catalog:",
     "semantic-release": "catalog:",
     "sort-package-json": "catalog:",
