@@ -274,6 +274,9 @@ importers:
       conventional-changelog-conventionalcommits:
         specifier: 'catalog:'
         version: 10.2.1
+      cypress:
+        specifier: 'catalog:'
+        version: 15.20.1
       eslint:
         specifier: 'catalog:'
         version: 10.8.1(jiti@2.7.0)

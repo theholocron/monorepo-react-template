@@ -49,6 +49,7 @@
     "@vitest/coverage-v8": "catalog:",
     "alex": "^11.0.1",
     "conventional-changelog-conventionalcommits": "catalog:",
+    "cypress": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-n": "catalog:",
     "eslint-plugin-simple-import-sort": "catalog:",
