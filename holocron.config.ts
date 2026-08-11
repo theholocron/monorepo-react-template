@@ -23,7 +23,14 @@ export default defineConfig({
 		...workflows,
 		{
 			name: "test",
-			with: { "run-unit": false, "run-storybook": true, "run-interaction": true },
+			with: {
+				"run-unit": false,
+				"run-storybook": true,
+				"run-interaction": true,
+				"run-chromatic": {
+					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
+				},
+			},
 		},
 		{ name: "release", with: { "run-build": true } },
 		{

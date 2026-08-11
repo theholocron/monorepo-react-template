@@ -7,6 +7,15 @@
       "outputs": ["dist/**"],
       "dependsOn": ["^build"]
     },
+    "build:storybook": {
+      "inputs": ["src/**", ".storybook/**", "public/**"],
+      "outputs": ["storybook-static/**"],
+      "dependsOn": ["^build"]
+    },
+    "start:storybook": {
+      "cache": false,
+      "persistent": true
+    },
     "lint": {
       "inputs": ["src/**", "eslint.config.ts", "eslint.config.js"],
       "outputs": []
