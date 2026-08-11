@@ -1,0 +1,36 @@
+import { type StorybookConfig } from "@storybook/react-vite";
+
+const config: StorybookConfig = {
+	addons: [
+		"@storybook/addon-a11y",
+		"@storybook/addon-coverage",
+		"@storybook/addon-designs",
+		"@storybook/addon-docs",
+		"@storybook/addon-links",
+		"@storybook/addon-themes",
+		"@storybook/addon-vitest",
+		"@chromatic-com/storybook",
+	],
+	core: {
+		builder: "@storybook/builder-vite",
+		options: {
+			viteConfigPath: "../vite.config.ts",
+		},
+	},
+	docs: {
+		defaultName: "Documentation",
+	},
+	framework: "@storybook/react-vite",
+	stories: ["../src/**/*.mdx", "../src/**/*.story.@(js|jsx|mjs|ts|tsx)"],
+	async viteFinal(config) {
+		const { mergeConfig } = await import("vite");
+
+		return mergeConfig(config, {
+			optimizeDeps: {
+				include: ["react/jsx-dev-runtime", "react-dom/client"],
+			},
+		});
+	},
+};
+
+export default config;

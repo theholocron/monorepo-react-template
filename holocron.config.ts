@@ -21,7 +21,15 @@ export default defineConfig({
 	},
 	workflows: [
 		...workflows,
+		{
+			name: "test",
+			with: { "run-unit": false, "run-storybook": true, "run-interaction": true },
+		},
 		{ name: "release", with: { "run-build": true } },
+		{
+			name: "deploy-storybook",
+			paths: ["packages/package-b/src/**", "packages/package-b/.storybook/**"],
+		},
 		{
 			name: "deploy-docs",
 			with: { name: "monorepo-react-template", "skip-content": true },

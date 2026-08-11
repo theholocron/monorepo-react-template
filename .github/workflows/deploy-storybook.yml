@@ -2,28 +2,27 @@
 # Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
 # Tool:    holocron setup
 # Changes: run `holocron setup` to regenerate.
-name: Test
+name: Deploy Storybook
 
 on: # yamllint disable-line rule:truthy
   push:
-    branches: [main, alpha]
-  pull_request:
+    branches: [main]
+    paths:
+      - packages/package-b/src/**
+      - packages/package-b/.storybook/**
+  workflow_dispatch:
 
 concurrency:
-  group: test-${{ github.ref }}
-  cancel-in-progress: true
+  group: pages
+  cancel-in-progress: false
 
 permissions:
   contents: read
+  pages: write
   id-token: write
-  statuses: write
 
 jobs:
-  test:
-    name: Test
-    uses: theholocron/.github/.github/workflows/test.yml@main
-    with:
-      run-unit: false
-      run-storybook: true
-      run-interaction: true
+  deploy-storybook:
+    name: Deploy Storybook
+    uses: theholocron/.github/.github/workflows/deploy-storybook.yml@main
     secrets: inherit

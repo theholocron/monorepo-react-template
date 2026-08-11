@@ -21,6 +21,7 @@
     "release": "semantic-release",
     "test": "turbo run test",
     "test:coverage": "turbo run test:coverage",
+    "test:storybook": "turbo run test:storybook",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
@@ -52,6 +53,7 @@
     "husky": "catalog:",
     "knip": "catalog:",
     "lint-staged": "catalog:",
+    "playwright": "catalog:",
     "prettier": "catalog:",
     "semantic-release": "catalog:",
     "sort-package-json": "catalog:",
