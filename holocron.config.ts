@@ -28,9 +28,7 @@ export default defineConfig({
 				"run-storybook": true,
 				"run-interaction": true,
 				"run-user-flow": true,
-				"run-chromatic": {
-					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
-				},
+				"run-chromatic": true,
 			},
 		},
 		{ name: "release", with: { "run-build": true } },
