@@ -25,10 +25,14 @@
   "scripts": {
     "build": "vite build",
     "build:storybook": "storybook build",
+    "dev": "vite",
     "lint": "eslint .",
+    "prepreview": "vite build --config vite.app.config.ts",
+    "preview": "vite preview --config vite.app.config.ts",
     "start:storybook": "storybook dev -p 6006",
     "test": "vitest run --project storybook",
     "test:coverage": "vitest run --project storybook --coverage",
+    "test:cypress": "cypress open",
     "test:storybook": "vitest run --project storybook",
     "typecheck": "tsc --noEmit"
   },
@@ -57,6 +61,8 @@
     "@vitest/coverage-v8": "catalog:",
     "@vitest/eslint-plugin": "catalog:",
     "chromatic": "^18.2.0",
+    "cypress": "catalog:",
+    "eslint-plugin-cypress": "catalog:",
     "eslint-plugin-react": "catalog:",
     "eslint-plugin-storybook": "catalog:",
     "jsdom": "catalog:",

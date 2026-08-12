@@ -22,13 +22,18 @@ export default defineConfig({
 	workflows: [
 		...workflows,
 		{
+			name: "audit",
+			with: { "run-performance": true, "lighthouse-config": "lighthouse.config.cjs" },
+		},
+		{
 			name: "test",
 			with: {
 				"run-unit": false,
 				"run-storybook": true,
 				"run-interaction": true,
+				"run-user-flow": true,
 				"run-chromatic": {
-					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
+					projects: [{ tokenName: "", workingDir: "packages/package-b" }],
 				},
 			},
 		},

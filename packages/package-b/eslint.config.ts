@@ -2,10 +2,12 @@ import { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { reactApp } from "@theholocron/eslint-config/bundles/react-app";
+import { cypress } from "@theholocron/eslint-config/cypress";
 import type { Linter } from "eslint";
 
 const config: Linter.Config[] = [
 	...reactApp(),
+	...cypress(),
 	{
 		languageOptions: {
 			parserOptions: {

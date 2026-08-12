@@ -4,7 +4,7 @@
   "tasks": {
     "build": {
       "inputs": ["src/**", "vite.config.ts", "tsconfig.json", "package.json"],
-      "outputs": ["dist/**"],
+      "outputs": ["dist/**", "dist-app/**"],
       "dependsOn": ["^build"]
     },
     "build:storybook": {
@@ -12,10 +12,20 @@
       "outputs": ["storybook-static/**"],
       "dependsOn": ["^build"]
     },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "preview": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
     "start:storybook": {
       "cache": false,
       "persistent": true
     },
+    "test:cypress": {},
     "lint": {
       "inputs": ["src/**", "eslint.config.ts", "eslint.config.js"],
       "outputs": []
