@@ -20,7 +20,7 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "prepare": "husky",
-    "preview": "turbo run preview",
+    "preview": "turbo run preview --filter=@theholocron/package-b",
     "release": "semantic-release",
     "test": "turbo run test",
     "test:coverage": "turbo run test:coverage",
