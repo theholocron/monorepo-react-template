@@ -26,6 +26,9 @@ const config: Linter.Config[] = [
 			sourceType: "commonjs",
 			globals: globals.commonjs,
 		},
+		rules: {
+			"n/no-unpublished-require": "off",
+		},
 	},
 	{ ignores: ["packages/**", "docs/.astro/**", "**/dist/**", "**/coverage/**"] },
 ];
