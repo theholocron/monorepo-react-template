@@ -28,5 +28,5 @@ jobs:
       run-interaction: true
       run-user-flow: true
       run-chromatic: true
-      chromatic-projects: '[{"tokenName":"","workingDir":"packages/package-b"}]'
+      chromatic-projects: '[{"tokenName":"PACKAGE_B","workingDir":"packages/package-b"}]'
     secrets: inherit
