@@ -68,6 +68,7 @@ catalogs:
     '@theholocron/commitlint-config': ^7.16.0
     '@theholocron/eslint-config': ^7.16.0
     '@theholocron/holocron-config': ^7.16.0
+    '@theholocron/lighthouse-config': ^7.16.0
     '@theholocron/lint-staged-config': ^7.16.0
     '@theholocron/prettier-config': ^7.17.0
     '@theholocron/semantic-release-config': ^7.16.0
