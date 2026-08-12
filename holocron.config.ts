@@ -42,11 +42,7 @@ export default defineConfig({
 			name: "deploy-storybook",
 			paths: ["packages/package-b/src/**", "packages/package-b/.storybook/**"],
 		},
-		{
-			name: "deploy-docs",
-			with: { name: "monorepo-react-template", "skip-content": true },
-			paths: ["docs/**"],
-		},
+		{ name: "deploy-docs", with: { name: "monorepo-react-template" }, paths: ["docs/**"] },
 	],
 	providers: {
 		...providers,
