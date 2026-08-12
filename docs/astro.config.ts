@@ -4,7 +4,7 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
 	site: "https://theholocron.github.io",
-	base: "/monorepo-react-template",
+	base: "/projects/monorepo-react-template",
 	integrations: [
 		starlight({
 			title: "Monorepo React Template",
