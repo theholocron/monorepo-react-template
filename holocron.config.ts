@@ -39,10 +39,10 @@ export default defineConfig({
 		},
 		{ name: "release", with: { "run-build": true } },
 		{
-			name: "deploy-storybook",
+			name: "deploy",
+			with: { type: "storybook" },
 			paths: ["packages/package-b/src/**", "packages/package-b/.storybook/**"],
 		},
-		{ name: "deploy-docs", with: { name: "monorepo-react-template" }, paths: ["docs/**"] },
 	],
 	providers: {
 		...providers,
