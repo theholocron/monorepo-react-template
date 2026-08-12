@@ -8,8 +8,7 @@ on: # yamllint disable-line rule:truthy
   push:
     branches: [main]
     paths:
-      - src/**
-      - .storybook/**
+      - docs/**
       - packages/package-b/src/**
       - packages/package-b/.storybook/**
   workflow_dispatch:
@@ -28,5 +27,7 @@ jobs:
     name: Deploy
     uses: theholocron/.github/.github/workflows/deploy.yml@main
     with:
-      type: storybook
+      type: docs
+      name: monorepo-react-template
+      storybook-projects: '[{"name":"package-b","workingDir":"packages/package-b"}]'
     secrets: inherit
