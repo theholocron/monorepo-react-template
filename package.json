@@ -19,7 +19,7 @@
     "build:storybook": "turbo run build:storybook",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "prepare": "husky && pnpm exec cypress install",
+    "prepare": "husky",
     "preview": "turbo run preview --filter=@theholocron/package-b",
     "release": "semantic-release",
     "test": "turbo run test",
