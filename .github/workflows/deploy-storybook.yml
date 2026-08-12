@@ -8,6 +8,8 @@ on: # yamllint disable-line rule:truthy
   push:
     branches: [main]
     paths:
+      - src/**
+      - .storybook/**
       - packages/package-b/src/**
       - packages/package-b/.storybook/**
   workflow_dispatch:
