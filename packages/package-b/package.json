@@ -27,6 +27,8 @@
     "build:storybook": "storybook build",
     "dev": "vite",
     "lint": "eslint .",
+    "prepreview": "vite build --config vite.app.config.ts",
+    "preview": "vite preview --config vite.app.config.ts",
     "start:storybook": "storybook dev -p 6006",
     "test": "vitest run --project storybook",
     "test:coverage": "vitest run --project storybook --coverage",
