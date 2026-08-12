@@ -33,7 +33,7 @@ export default defineConfig({
 				"run-interaction": true,
 				"run-user-flow": true,
 				"run-chromatic": {
-					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
+					projects: [{ tokenName: "", workingDir: "packages/package-b" }],
 				},
 			},
 		},
