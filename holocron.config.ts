@@ -41,11 +41,9 @@ export default defineConfig({
 		{
 			name: "deploy",
 			with: {
-				type: "docs",
-				name: "monorepo-react-template",
-				"storybook-projects": [{ name: "package-b", workingDir: "packages/package-b" }],
+				docs: true,
+				storybook: [{ name: "package-b", path: "packages/package-b" }],
 			},
-			paths: ["docs/**", "packages/package-b/src/**", "packages/package-b/.storybook/**"],
 		},
 	],
 	providers: {
