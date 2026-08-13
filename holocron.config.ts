@@ -39,13 +39,13 @@ export default defineConfig({
 		},
 		{ name: "release", with: { "run-build": true } },
 		{
-			name: "deploy-storybook",
-			paths: ["packages/package-b/src/**", "packages/package-b/.storybook/**"],
-		},
-		{
-			name: "deploy-docs",
-			with: { name: "monorepo-react-template", "skip-content": true },
-			paths: ["docs/**"],
+			name: "deploy",
+			with: {
+				type: "docs",
+				name: "monorepo-react-template",
+				"storybook-projects": [{ name: "package-b", workingDir: "packages/package-b" }],
+			},
+			paths: ["docs/**", "packages/package-b/src/**", "packages/package-b/.storybook/**"],
 		},
 	],
 	providers: {
