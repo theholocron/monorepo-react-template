@@ -1,15 +1,14 @@
 # AUTO-GENERATED — do not edit directly.
 # Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
-# Tool:    holocron setup
-# Changes: run `holocron setup` to regenerate.
-name: Deploy Storybook
+# Tool:    holocron sync-github
+# Changes: edit source in theholocron/holocron and push to alpha or main.
+name: Deploy
 
 on: # yamllint disable-line rule:truthy
   push:
     branches: [main]
     paths:
-      - src/**
-      - .storybook/**
+      - docs/**
       - packages/package-b/src/**
       - packages/package-b/.storybook/**
   workflow_dispatch:
@@ -24,7 +23,12 @@ permissions:
   id-token: write
 
 jobs:
-  deploy-storybook:
-    name: Deploy Storybook
-    uses: theholocron/.github/.github/workflows/deploy-storybook.yml@main
+  deploy:
+    name: Deploy
+    uses: theholocron/.github/.github/workflows/deploy.yml@main
+    with:
+      type: docs
+      name: monorepo-react-template
+      storybook-projects: >-
+        [{"name":"package-b","workingDir":"packages/package-b","outputDir":"storybook-static"}]
     secrets: inherit

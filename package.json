@@ -29,6 +29,7 @@
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
+    "@astrojs/starlight": "catalog:",
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@eslint/js": "catalog:",
@@ -36,8 +37,10 @@
     "@semantic-release/exec": "catalog:",
     "@semantic-release/git": "catalog:",
     "@semantic-release/github": "catalog:",
+    "@theholocron/astro-config": "catalog:configs",
     "@theholocron/cli": "catalog:holocron",
     "@theholocron/commitlint-config": "catalog:configs",
+    "@theholocron/docs-theme": "catalog:",
     "@theholocron/eslint-config": "catalog:configs",
     "@theholocron/holocron-config": "catalog:configs",
     "@theholocron/holocron-plugin-github": "catalog:holocron",
@@ -51,6 +54,7 @@
     "@theholocron/vitest-config": "catalog:configs",
     "@vitest/coverage-v8": "catalog:",
     "alex": "^11.0.1",
+    "astro": "catalog:",
     "conventional-changelog-conventionalcommits": "catalog:",
     "cypress": "catalog:",
     "eslint": "catalog:",
