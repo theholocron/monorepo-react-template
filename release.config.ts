@@ -5,6 +5,6 @@ export default defineConfig({
 	exec: {
 		prepareCmd: "pnpm exec holocron npm bump-versions ${nextRelease.version}",
 		publishCmd:
-			"pnpm -r --filter='./packages/*' publish --access public --no-git-checks --tag ${nextRelease.channel || 'latest'}",
+			"pnpm -r --filter='./packages/*' publish --access public --no-git-checks --provenance --tag ${nextRelease.channel || 'latest'}",
 	},
 });
