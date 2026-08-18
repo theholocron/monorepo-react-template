@@ -16,10 +16,17 @@ const config: KnipConfig = {
 		},
 	},
 	ignoreDependencies: [
-		"@theholocron/tsconfig",
+		// commitlint "extends" uses string shorthand
 		"@theholocron/commitlint-config",
+		"@theholocron",
+		// passed as --config arg to lint-staged binary in .husky/pre-commit
 		"@theholocron/lint-staged-config",
-		"husky",
+		// loaded at runtime by the holocron plugin system — not a static import
+		"@theholocron/holocron-plugin-github",
+		// skills referenced as strings in holocron.config.ts
+		"@theholocron/skills",
+		// binary tools — invoked via CLI or hooks, not module imports
+		"sort-package-json",
 		"turbo",
 	],
 	ignoreExportsUsedInFile: true,
