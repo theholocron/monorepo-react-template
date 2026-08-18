@@ -1,6 +1,6 @@
 {
   "name": "@theholocron/monorepo-react-template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
   "homepage": "https://docs.theholocron.dev/monorepo-react-template/",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
