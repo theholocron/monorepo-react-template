@@ -12,14 +12,12 @@ const config: KnipConfig = {
 			astro: false,
 		},
 		docs: {
-			// astro.config.ts and content.config.ts auto-detected by Astro plugin
+			entry: ["src/content.config.ts"],
 			project: ["src/**/*.ts"],
 		},
 		"packages/*": {
 			// src/index.ts, vite.config.ts, vitest.config.ts, eslint.config.ts auto-detected by plugins
 			project: ["src/**/*.{ts,tsx}", "*.ts"],
-			// .mdx story references from storybook stories pattern cannot be analyzed
-			ignoreFiles: ["**/*.mdx"],
 		},
 	},
 	ignoreDependencies: [
@@ -33,7 +31,6 @@ const config: KnipConfig = {
 		// skills referenced as strings in holocron.config.ts
 		"@theholocron/skills",
 		// config packages loaded via config file resolution — not static imports
-		"@theholocron/devmoji-config",
 		"@theholocron/lighthouse-config",
 		"@theholocron/prettier-config",
 		// v8 coverage provider loaded at runtime by vitest
