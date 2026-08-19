@@ -33,7 +33,7 @@
     "test": "vitest run --project storybook",
     "test:coverage": "vitest run --project storybook --coverage",
     "test:cypress": "cypress open",
-    "test:storybook": "vitest run --project storybook",
+    "test:storybook": "vitest run --project storybook --coverage",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
@@ -71,7 +71,6 @@
     "react": "catalog:",
     "react-dom": "catalog:",
     "storybook": "catalog:",
-    "storybook-addon-pseudo-states": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:",
     "vite-plugin-dts": "catalog:",

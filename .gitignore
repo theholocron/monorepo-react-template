@@ -83,11 +83,13 @@ node_modules
 .turbo
 
 # Locally Built Stuff
+.astro
 super-linter-output
 coverage
 reports
 test-report.junit.xml
 dist
+tsconfig.tsbuildinfo
 
 # managed by holocron setup — skills
 /.agents/skills/

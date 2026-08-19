@@ -3,31 +3,40 @@ import type { KnipConfig } from "knip";
 const config: KnipConfig = {
 	workspaces: {
 		".": {
-			entry: ["commitlint.config.ts", "eslint.config.ts", "holocron.config.ts", "prettier.config.ts"],
-			project: ["*.ts"],
+			// commitlint.config.ts, eslint.config.ts, prettier.config.ts auto-detected by plugins
+			entry: ["holocron.config.ts"],
+			project: ["*.ts", "*.cjs"],
 		},
 		docs: {
-			entry: ["src/content.config.ts", "astro.config.ts"],
-			project: ["src/**/*.ts", "*.ts"],
+			// astro.config.ts lives at repo root, not docs/
+			entry: ["src/content.config.ts"],
+			project: ["src/**/*.ts"],
 		},
 		"packages/*": {
-			entry: ["src/index.ts", "vite.config.ts", "vitest.config.ts", "eslint.config.ts"],
+			// src/index.ts, vite.config.ts, vitest.config.ts, eslint.config.ts auto-detected by plugins
 			project: ["src/**/*.{ts,tsx}", "*.ts"],
 		},
 	},
 	ignoreDependencies: [
-		// commitlint "extends" uses string shorthand
-		"@theholocron/commitlint-config",
-		"@theholocron",
 		// passed as --config arg to lint-staged binary in .husky/pre-commit
 		"@theholocron/lint-staged-config",
 		// loaded at runtime by the holocron plugin system — not a static import
 		"@theholocron/holocron-plugin-github",
+		// loaded at runtime by tsdown / vitest in packages — not a static root import
+		"@theholocron/tsdown-config",
+		"@theholocron/vitest-config",
 		// skills referenced as strings in holocron.config.ts
 		"@theholocron/skills",
-		// binary tools — invoked via CLI or hooks, not module imports
+		// config packages resolved by tool at runtime — not static imports
+		"@theholocron/prettier-config",
+		// v8 coverage provider loaded at runtime by vitest
+		"@vitest/coverage-v8",
+		// binary tools — invoked via CLI, hooks, or CI scripts
+		"alex",
+		"chromatic",
+		"playwright",
 		"sort-package-json",
-		"turbo",
+		"vitest",
 	],
 	ignoreExportsUsedInFile: true,
 };

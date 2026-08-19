@@ -42,7 +42,7 @@
     },
     "test:storybook": {
       "inputs": ["src/**", ".storybook/**", "vitest.config.ts", "vitest.setup.ts", "package.json"],
-      "outputs": ["test-report.junit.xml"],
+      "outputs": ["coverage/**", "test-report.junit.xml"],
       "dependsOn": ["^build"]
     },
     "typecheck": {
