@@ -11,7 +11,24 @@ export default defineConfig({
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		topics: ["monorepo", "pnpm", "react", "template", "typescript", "vite"],
 		...repo,
-		protection: "balanced",
+		protection: "strict",
+		requiredChecks: [
+			"Storybook Publish",
+			"UI Review",
+			"UI Tests",
+			"Test / Run Storybook interaction tests",
+			"Test / Test Interactions and Accessibility",
+			"Test / Test User Flow (1)",
+			"Test / Test User Flow (2)",
+			"Test / Test Visual and Composition (PACKAGE_B)",
+			"audit / Audit the bundle size",
+			"audit / Audit the performance",
+			"audit / Knip",
+			"codecov/patch",
+			"codecov/patch/package-b",
+			"codecov/project",
+			"lhci/url/",
+		],
 		properties: {
 			...repo.properties,
 			runtime_environment: "browser",
@@ -23,7 +40,7 @@ export default defineConfig({
 		...workflows,
 		{
 			name: "audit",
-			with: { "run-performance": true, "lighthouse-config": "lighthouse.config.cjs" },
+			with: { "run-knip": true, "run-performance": true, "lighthouse-config": "lighthouse.config.cjs" },
 		},
 		{
 			name: "test",
@@ -33,7 +50,7 @@ export default defineConfig({
 				"run-interaction": true,
 				"run-user-flow": true,
 				"run-chromatic": {
-					projects: [{ tokenName: "", workingDir: "packages/package-b" }],
+					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
 				},
 			},
 		},

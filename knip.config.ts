@@ -3,24 +3,44 @@ import type { KnipConfig } from "knip";
 const config: KnipConfig = {
 	workspaces: {
 		".": {
-			entry: ["commitlint.config.ts", "eslint.config.ts", "holocron.config.ts", "prettier.config.ts"],
-			project: ["*.ts"],
+			// commitlint.config.ts, eslint.config.ts, prettier.config.ts auto-detected by plugins
+			entry: ["holocron.config.ts"],
+			project: ["*.ts", "*.cjs"],
+			// standalone tool configs — not imported by project code
+			ignoreFiles: ["devmoji.config.cjs", "lighthouse.config.cjs"],
+			// astro.config.ts is the docs build config — disable plugin at root to avoid .astro/.mdx hints
+			astro: false,
 		},
 		docs: {
-			entry: ["src/content.config.ts", "astro.config.ts"],
-			project: ["src/**/*.ts", "*.ts"],
+			entry: ["src/content.config.ts"],
+			project: ["src/**/*.ts"],
 		},
 		"packages/*": {
-			entry: ["src/index.ts", "vite.config.ts", "vitest.config.ts", "eslint.config.ts"],
+			// src/index.ts, vite.config.ts, vitest.config.ts, eslint.config.ts auto-detected by plugins
 			project: ["src/**/*.{ts,tsx}", "*.ts"],
 		},
 	},
 	ignoreDependencies: [
-		"@theholocron/tsconfig",
-		"@theholocron/commitlint-config",
+		// passed as --config arg to lint-staged binary in .husky/pre-commit
 		"@theholocron/lint-staged-config",
-		"husky",
-		"turbo",
+		// loaded at runtime by the holocron plugin system — not a static import
+		"@theholocron/holocron-plugin-github",
+		// loaded at runtime by tsdown / vitest in packages — not a static root import
+		"@theholocron/tsdown-config",
+		"@theholocron/vitest-config",
+		// skills referenced as strings in holocron.config.ts
+		"@theholocron/skills",
+		// config packages loaded via config file resolution — not static imports
+		"@theholocron/lighthouse-config",
+		"@theholocron/prettier-config",
+		// v8 coverage provider loaded at runtime by vitest
+		"@vitest/coverage-v8",
+		// binary tools — invoked via CLI, hooks, or CI scripts
+		"alex",
+		"chromatic",
+		"playwright",
+		"sort-package-json",
+		"vitest",
 	],
 	ignoreExportsUsedInFile: true,
 };
