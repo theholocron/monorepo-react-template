@@ -4,12 +4,11 @@ const config: KnipConfig = {
 	workspaces: {
 		".": {
 			// commitlint.config.ts, eslint.config.ts, prettier.config.ts auto-detected by plugins
-			entry: ["holocron.config.ts"],
+			entry: ["holocron.config.ts", "devmoji.config.cjs", "lighthouse.config.cjs"],
 			project: ["*.ts", "*.cjs"],
 		},
 		docs: {
-			// astro.config.ts lives at repo root, not docs/
-			entry: ["src/content.config.ts"],
+			// astro.config.ts and content.config.ts auto-detected by Astro plugin
 			project: ["src/**/*.ts"],
 		},
 		"packages/*": {
@@ -38,6 +37,7 @@ const config: KnipConfig = {
 		"sort-package-json",
 		"vitest",
 	],
+	ignore: ["**/*.astro", "**/*.mdx"],
 	ignoreExportsUsedInFile: true,
 };
 
