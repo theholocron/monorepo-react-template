@@ -4,8 +4,12 @@ const config: KnipConfig = {
 	workspaces: {
 		".": {
 			// commitlint.config.ts, eslint.config.ts, prettier.config.ts auto-detected by plugins
-			entry: ["holocron.config.ts", "devmoji.config.cjs", "lighthouse.config.cjs"],
+			entry: ["holocron.config.ts"],
 			project: ["*.ts", "*.cjs"],
+			// standalone tool configs — not imported by project code
+			ignoreFiles: ["devmoji.config.cjs", "lighthouse.config.cjs"],
+			// astro.config.ts is the docs build config — disable plugin at root to avoid .astro/.mdx hints
+			astro: false,
 		},
 		docs: {
 			// astro.config.ts and content.config.ts auto-detected by Astro plugin
@@ -14,6 +18,8 @@ const config: KnipConfig = {
 		"packages/*": {
 			// src/index.ts, vite.config.ts, vitest.config.ts, eslint.config.ts auto-detected by plugins
 			project: ["src/**/*.{ts,tsx}", "*.ts"],
+			// .mdx story references from storybook stories pattern cannot be analyzed
+			ignoreFiles: ["**/*.mdx"],
 		},
 	},
 	ignoreDependencies: [
@@ -26,7 +32,9 @@ const config: KnipConfig = {
 		"@theholocron/vitest-config",
 		// skills referenced as strings in holocron.config.ts
 		"@theholocron/skills",
-		// config packages resolved by tool at runtime — not static imports
+		// config packages loaded via config file resolution — not static imports
+		"@theholocron/devmoji-config",
+		"@theholocron/lighthouse-config",
 		"@theholocron/prettier-config",
 		// v8 coverage provider loaded at runtime by vitest
 		"@vitest/coverage-v8",
@@ -37,7 +45,6 @@ const config: KnipConfig = {
 		"sort-package-json",
 		"vitest",
 	],
-	ignore: ["**/*.astro", "**/*.mdx"],
 	ignoreExportsUsedInFile: true,
 };
 
