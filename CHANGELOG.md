@@ -1,3 +1,5 @@
+## [1.3.6](https://github.com/theholocron/monorepo-react-template/compare/v1.3.5...v1.3.6) (2026-08-20)
+
 ## [1.3.5](https://github.com/theholocron/monorepo-react-template/compare/v1.3.4...v1.3.5) (2026-08-19)
 
 ## [1.3.4](https://github.com/theholocron/monorepo-react-template/compare/v1.3.3...v1.3.4) (2026-08-19)
