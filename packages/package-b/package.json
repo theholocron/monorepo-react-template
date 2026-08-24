@@ -60,7 +60,7 @@
     "@vitest/browser-playwright": "catalog:",
     "@vitest/coverage-v8": "catalog:",
     "@vitest/eslint-plugin": "catalog:",
-    "chromatic": "^18.2.0",
+    "chromatic": "^18.5.0",
     "cypress": "catalog:",
     "eslint-plugin-cypress": "catalog:",
     "eslint-plugin-react": "catalog:",

@@ -69,7 +69,7 @@
     "prettier": "catalog:",
     "semantic-release": "catalog:",
     "sort-package-json": "catalog:",
-    "turbo": "^2.10.10",
+    "turbo": "^2.10.11",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "vitest": "catalog:"
