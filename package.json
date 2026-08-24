@@ -13,7 +13,10 @@
   ],
   "homepage": "https://docs.theholocron.dev/monorepo-react-template/",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
-  "repository": "theholocron/monorepo-react-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theholocron/monorepo-react-template.git"
+  },
   "license": "GPL-3.0",
   "author": "Newton Koumantzelis",
   "type": "module",
