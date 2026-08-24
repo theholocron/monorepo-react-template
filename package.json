@@ -1,7 +1,16 @@
 {
   "name": "@theholocron/monorepo-react-template",
   "version": "1.3.7",
+  "private": true,
   "description": "A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
+  "keywords": [
+    "monorepo",
+    "pnpm",
+    "react",
+    "template",
+    "typescript",
+    "vite"
+  ],
   "homepage": "https://docs.theholocron.dev/monorepo-react-template/",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
   "repository": {
