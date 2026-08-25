@@ -31,6 +31,8 @@ This will:
 
 ## Development
 
+<!-- holocron:development -->
+
 This repo uses [pnpm workspaces](https://pnpm.io/workspaces) with [Turborepo](https://turbo.build/repo) for task orchestration.
 
 ```bash
@@ -40,6 +42,8 @@ pnpm test          # test all packages
 pnpm typecheck     # typecheck all packages
 pnpm lint          # lint all packages
 ```
+
+<!-- /holocron:development -->
 
 ## What's Included
 
@@ -58,4 +62,8 @@ pnpm lint          # lint all packages
 
 ## Releases
 
+<!-- holocron:releases -->
+
 Releases are automated via [semantic-release](https://semantic-release.gitbook.io) on push to `main`. All packages are versioned and published in lockstep. See [CHANGELOG.md](CHANGELOG.md) for the release history.
+
+<!-- /holocron:releases -->
