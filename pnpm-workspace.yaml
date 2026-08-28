@@ -75,8 +75,8 @@ catalogs:
     '@theholocron/vitest-config': ^7.19.1
 
   holocron:
-    '@theholocron/cli': ^3.29.11
-    '@theholocron/holocron-plugin-github': ^3.29.11
+    '@theholocron/cli': ^3.36.0
+    '@theholocron/holocron-plugin-github': ^3.36.0
 
 onlyBuiltDependencies:
   - cypress
