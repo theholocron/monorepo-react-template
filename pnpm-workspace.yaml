@@ -65,7 +65,7 @@ catalogs:
     '@theholocron/astro-config': ^7.22.2
     '@theholocron/commitlint-config': ^7.22.2
     '@theholocron/eslint-config': ^7.23.2
-    '@theholocron/holocron-config': ^7.22.2
+    '@theholocron/holocron-config': ^7.26.0
     '@theholocron/lighthouse-config': ^7.22.2
     '@theholocron/lint-staged-config': ^7.22.2
     '@theholocron/prettier-config': ^7.19.1
@@ -75,8 +75,8 @@ catalogs:
     '@theholocron/vitest-config': ^7.19.1
 
   holocron:
-    '@theholocron/cli': ^3.29.11
-    '@theholocron/holocron-plugin-github': ^3.29.11
+    '@theholocron/cli': ^3.36.0
+    '@theholocron/holocron-plugin-github': ^3.36.0
 
 onlyBuiltDependencies:
   - cypress
