@@ -21,6 +21,8 @@ const config: KnipConfig = {
 		},
 	},
 	ignoreDependencies: [
+		// resolved at config time via require.resolve for Vite alias — transitive of @theholocron/astro-config
+		"@astrojs/react",
 		// passed as --config arg to lint-staged binary in .husky/pre-commit
 		"@theholocron/lint-staged-config",
 		// loaded at runtime by the holocron plugin system — not a static import
