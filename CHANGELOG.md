@@ -1,3 +1,11 @@
+## [1.3.11](https://github.com/theholocron/monorepo-react-template/compare/v1.3.10...v1.3.11) (2026-09-02)
+
+### Chores
+
+* ⬆️ adopt monorepo(react()) preset ([#38](https://github.com/theholocron/monorepo-react-template/issues/38)) ([a65202d](https://github.com/theholocron/monorepo-react-template/commit/a65202d982f7c83e73c68ec83a20f496853bc8dc))
+* 🔧 ⬆️ bump @theholocron/cli, holocron-config, and holocron-plugin-github to latest ([#39](https://github.com/theholocron/monorepo-react-template/issues/39)) ([39bb013](https://github.com/theholocron/monorepo-react-template/commit/39bb013d56a6108127aa91fdef48637c4a4957e1))
+* **deps:** bump the all-dependencies group across 1 directory with 15 updates ([#41](https://github.com/theholocron/monorepo-react-template/issues/41)) ([8596bfc](https://github.com/theholocron/monorepo-react-template/commit/8596bfc477635be7b4323960352131b8e6d74f1d))
+
 ## [1.3.10](https://github.com/theholocron/monorepo-react-template/compare/v1.3.9...v1.3.10) (2026-08-26)
 
 ### Bug Fixes
