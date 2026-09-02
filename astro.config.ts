@@ -15,14 +15,17 @@ const config = defineConfig({
 	publicDir: "./docs/public",
 });
 
-// @astrojs/react/server.js cannot be resolved by Rolldown during SSR bundling;
-// marking @astrojs/react as external lets Node resolve it at runtime instead.
+// virtual:astro:renderers imports @astrojs/react/server.js; rolldown@1.2.x
+// cannot resolve this sub-path export during the build pass. Mark it external
+// so Node resolves it at runtime instead.
 export default {
 	...config,
 	vite: {
 		...config.vite,
-		ssr: {
-			external: ["@astrojs/react"],
+		build: {
+			rolldownOptions: {
+				external: ["@astrojs/react/server.js"],
+			},
 		},
 	},
 };
