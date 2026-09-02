@@ -33,8 +33,12 @@ export default {
 	...config,
 	vite: {
 		...config.vite,
-		// Pre-bundle React as ESM so Vite 8's module runner doesn't hit
-		// "module is not defined" when evaluating React's CJS entry in dev mode.
+		// Force React to be bundled (CJS→ESM) in the SSR/module-runner path so
+		// Vite 8's module runner doesn't hit "module is not defined" when
+		// evaluating React's CJS entry during Astro's dev-mode server rendering.
+		ssr: {
+			noExternal: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
+		},
 		optimizeDeps: {
 			...base.optimizeDeps,
 			include: [
