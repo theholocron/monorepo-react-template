@@ -78,8 +78,5 @@ catalogs:
     '@theholocron/cli': ^3.38.1
     '@theholocron/holocron-plugin-github': ^3.38.1
 
-overrides:
-  rolldown: 1.2.5
-
 onlyBuiltDependencies:
   - cypress
