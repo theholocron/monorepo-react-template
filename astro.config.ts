@@ -15,16 +15,16 @@ const config = defineConfig({
 	publicDir: "./docs/public",
 });
 
-// virtual:astro:renderers imports @astrojs/react/server.js; rolldown@1.2.x
-// cannot resolve this sub-path export during the build pass. Mark it external
-// so Node resolves it at runtime instead.
+// rolldown@1.2.x cannot resolve @astrojs/react sub-path exports (server.js,
+// client.js) during the Astro build pass. Mark the entire package external so
+// the runtime resolves it instead.
 export default {
 	...config,
 	vite: {
 		...config.vite,
 		build: {
 			rolldownOptions: {
-				external: ["@astrojs/react/server.js"],
+				external: [/^@astrojs\/react/],
 			},
 		},
 	},
