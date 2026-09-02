@@ -1,6 +1,16 @@
+import { createRequire } from "node:module";
+
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "@theholocron/astro-config";
 import { docsTheme } from "@theholocron/docs-theme";
+
+// rolldown@1.2.x cannot resolve @astrojs/react sub-path exports
+// (server.js, client.js) from virtual:astro:renderers. Aliasing to absolute
+// file paths lets rolldown find them via filesystem resolution while keeping
+// them bundled (required for SSR prerendering).
+const require = createRequire(import.meta.url);
+const astroReactClient = require.resolve("@astrojs/react/client.js");
+const astroReactServer = require.resolve("@astrojs/react/server.js");
 
 const config = defineConfig({
 	docs: {
@@ -15,10 +25,6 @@ const config = defineConfig({
 	publicDir: "./docs/public",
 });
 
-// rolldown@1.2.x cannot resolve @astrojs/react sub-path exports
-// (server.js, client.js) from virtual:astro:renderers. Aliasing to the
-// concrete dist paths lets rolldown find the files via filesystem resolution
-// while keeping them bundled (required for SSR prerendering).
 const viteResolve = (config.vite as { resolve?: { alias?: Record<string, string> } })?.resolve;
 export default {
 	...config,
@@ -28,8 +34,8 @@ export default {
 			...viteResolve,
 			alias: {
 				...(viteResolve?.alias ?? {}),
-				"@astrojs/react/client.js": "@astrojs/react/dist/client.js",
-				"@astrojs/react/server.js": "@astrojs/react/dist/server.js",
+				"@astrojs/react/client.js": astroReactClient,
+				"@astrojs/react/server.js": astroReactServer,
 			},
 		},
 	},
