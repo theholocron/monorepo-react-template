@@ -4,10 +4,9 @@ import starlight from "@astrojs/starlight";
 import { defineConfig } from "@theholocron/astro-config";
 import { docsTheme } from "@theholocron/docs-theme";
 
-// rolldown@1.2.x cannot resolve @astrojs/react sub-path exports
-// (server.js, client.js) from virtual:astro:renderers. Aliasing to absolute
-// file paths lets rolldown find them via filesystem resolution while keeping
-// them bundled (required for SSR prerendering).
+// rolldown@1.2.x cannot resolve @astrojs/react sub-path exports from
+// virtual:astro:renderers. Aliasing to absolute paths lets rolldown find them
+// via filesystem resolution while keeping them bundled for SSR prerendering.
 const require = createRequire(import.meta.url);
 const astroReactClient = require.resolve("@astrojs/react/client.js");
 const astroReactServer = require.resolve("@astrojs/react/server.js");
@@ -25,15 +24,31 @@ const config = defineConfig({
 	publicDir: "./docs/public",
 });
 
-const viteResolve = (config.vite as { resolve?: { alias?: Record<string, string> } })?.resolve;
+const base = config.vite as {
+	resolve?: { alias?: Record<string, string> };
+	optimizeDeps?: { include?: string[] };
+};
+
 export default {
 	...config,
 	vite: {
 		...config.vite,
+		// Pre-bundle React as ESM so Vite 8's module runner doesn't hit
+		// "module is not defined" when evaluating React's CJS entry in dev mode.
+		optimizeDeps: {
+			...base.optimizeDeps,
+			include: [
+				...(base.optimizeDeps?.include ?? []),
+				"react",
+				"react-dom",
+				"react/jsx-runtime",
+				"react/jsx-dev-runtime",
+			],
+		},
 		resolve: {
-			...viteResolve,
+			...base.resolve,
 			alias: {
-				...(viteResolve?.alias ?? {}),
+				...(base.resolve?.alias ?? {}),
 				"@astrojs/react/client.js": astroReactClient,
 				"@astrojs/react/server.js": astroReactServer,
 			},
