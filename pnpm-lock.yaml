@@ -3172,7 +3172,7 @@ packages:
     engines: {node: '>=22.0.0'}
 
   '@theholocron/holocron-config@7.31.0':
-    resolution: {integrity: sha512-fV8W8kkzhs3iayHq5aC4XCUwmqeewsZl2P2NpI8ntjCSCh5VTZhOhcTGQjATCLh/6kt7lg1yAF0JnLpom9rXoA==}
+    resolution: {integrity: sha512-OYaO65bBeqpAmLfneH0jKVCH+GSALyjnCQXdSLVoAp0EMaGk7QQEhWJY1+asnEAAymKf58I+vDc0ha9rucyatg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@theholocron/cli': '>=2.0.0-alpha.1'
