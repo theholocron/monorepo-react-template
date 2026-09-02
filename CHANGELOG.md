@@ -1,3 +1,9 @@
+## [1.4.0](https://github.com/theholocron/monorepo-react-template/compare/v1.3.11...v1.4.0) (2026-09-02)
+
+### Features
+
+* ✨ add wiki/fern docs setup ([#42](https://github.com/theholocron/monorepo-react-template/issues/42)) ([11cd657](https://github.com/theholocron/monorepo-react-template/commit/11cd65733165c9b4104b677cd2605441bb93fb2f))
+
 ## [1.3.11](https://github.com/theholocron/monorepo-react-template/compare/v1.3.10...v1.3.11) (2026-09-02)
 
 ### Chores
