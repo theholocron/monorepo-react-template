@@ -4,7 +4,7 @@ packages:
 
 # Shared dep versions for this repo.
 catalog:
-  '@astrojs/starlight': ^0.41.5
+  '@astrojs/starlight': ^0.41.10
   '@chromatic-com/storybook': ^5.3.0
   '@commitlint/cli': ^21.2.2
   '@commitlint/config-conventional': ^21.2.2
@@ -24,7 +24,7 @@ catalog:
   '@testing-library/jest-dom': ^7.0.1
   '@testing-library/react': ^16.3.2
   '@testing-library/user-event': ^14.6.5
-  '@theholocron/docs-theme': ^1.4.5
+  '@theholocron/docs-theme': ^1.7.4
   '@types/react': ^19.2.18
   '@types/react-dom': ^19.2.4
   '@vitejs/plugin-react': ^6.1.0
@@ -32,10 +32,10 @@ catalog:
   '@vitest/browser-playwright': ^4.1.10
   '@vitest/coverage-v8': ^4.1.10
   '@vitest/eslint-plugin': ^1.6.27
-  astro: ^7.2.4
+  astro: ^7.2.9
   conventional-changelog-conventionalcommits: ^10.4.0
   cypress: ^15.20.0
-  eslint: ^10.9.0
+  eslint: ^10.9.1
   eslint-plugin-cypress: ^7.0.0
   eslint-plugin-n: ^18.2.2
   eslint-plugin-react: ^7.37.5
@@ -44,8 +44,8 @@ catalog:
   globals: ^17.11.0
   husky: ^9.1.7
   jsdom: ^30.0.1
-  knip: ^6.32.2
-  lint-staged: ^17.3.0
+  knip: ^6.33.0
+  lint-staged: ^17.4.1
   playwright: ^1.62.1
   prettier: ^3.6.2
   react: ^19.2.8
@@ -54,7 +54,7 @@ catalog:
   sort-package-json: ^4.0.0
   storybook: ^10.5.8
   typescript: ^5.9.3
-  typescript-eslint: ^8.67.0
+  typescript-eslint: ^8.68.0
   vite: ^8.2.2
   vite-plugin-dts: ^5.0.3
   vitest: ^4.1.10
@@ -62,16 +62,16 @@ catalog:
 # Shared configs — release in lockstep; bump all entries together.
 catalogs:
   configs:
-    '@theholocron/astro-config': ^7.22.2
-    '@theholocron/commitlint-config': ^7.22.2
+    '@theholocron/astro-config': ^7.26.0
+    '@theholocron/commitlint-config': ^7.26.0
     '@theholocron/eslint-config': ^7.23.2
     '@theholocron/holocron-config': ^7.28.2
-    '@theholocron/lighthouse-config': ^7.22.2
-    '@theholocron/lint-staged-config': ^7.22.2
+    '@theholocron/lighthouse-config': ^7.26.0
+    '@theholocron/lint-staged-config': ^7.26.0
     '@theholocron/prettier-config': ^7.19.1
-    '@theholocron/semantic-release-config': ^7.22.2
+    '@theholocron/semantic-release-config': ^7.26.0
     '@theholocron/tsconfig': ^7.19.1
-    '@theholocron/tsdown-config': ^7.22.2
+    '@theholocron/tsdown-config': ^7.26.0
     '@theholocron/vitest-config': ^7.19.1
 
   holocron:
