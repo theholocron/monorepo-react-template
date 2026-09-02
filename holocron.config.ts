@@ -1,7 +1,7 @@
 import { defineConfig } from "@theholocron/cli";
-import { monorepo, react } from "@theholocron/holocron-config";
+import { compose, monorepo, react, wikiCapability as wiki } from "@theholocron/holocron-config";
 
-const { repo, workflows, providers, org, domain } = monorepo(react());
+const { repo, workflows, providers, org, domain } = compose(monorepo(react()), wiki());
 export default defineConfig({
 	description:
 		"A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
