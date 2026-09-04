@@ -55,6 +55,10 @@ export default defineConfig({
 			},
 		},
 	],
+	providers: {
+		...preset.providers,
+		wiki: ["fern", { domain: "wiki.theholocron.dev", fernOrg: "holocron", icon: "fa-duotone fa-copy" }],
+	},
 	docs: { build: "workflow", https: true },
 	agent: "claude",
 	skills: ["git-safety", "pr-workflow", "commit-standards", "security-review"],
