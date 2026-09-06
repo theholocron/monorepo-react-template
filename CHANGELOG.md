@@ -1,3 +1,14 @@
+## [1.5.0](https://github.com/theholocron/monorepo-react-template/compare/v1.4.0...v1.5.0) (2026-09-06)
+
+### Features
+
+* ✨ add wiki navbar links ([#46](https://github.com/theholocron/monorepo-react-template/issues/46)) ([1ec43a7](https://github.com/theholocron/monorepo-react-template/commit/1ec43a7b3ceaabb63b804ea8a6579f9da0854ff2))
+
+### Chores
+
+* ✨ add wiki icon and bump Fern to 5.114.1 ([#44](https://github.com/theholocron/monorepo-react-template/issues/44)) ([1dabb58](https://github.com/theholocron/monorepo-react-template/commit/1dabb58efa96fd366315626140559bed6422d698))
+* 🗑️ remove orphaned workflow files ([#43](https://github.com/theholocron/monorepo-react-template/issues/43)) ([11b3e2b](https://github.com/theholocron/monorepo-react-template/commit/11b3e2b19b3edfd2a18b283de6551366a66e89fd))
+
 ## [1.4.0](https://github.com/theholocron/monorepo-react-template/compare/v1.3.11...v1.4.0) (2026-09-02)
 
 ### Features
