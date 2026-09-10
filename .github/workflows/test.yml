@@ -1,7 +1,7 @@
 # AUTO-GENERATED — do not edit directly.
-# Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
+# Source:  theholocron/holocron · packages/cli/src/commands/setup/run-setup.ts
 # Tool:    holocron setup
-# Changes: run `holocron setup` to regenerate.
+# Changes: edit source in theholocron/holocron
 name: Test
 
 on: # yamllint disable-line rule:truthy
@@ -23,10 +23,7 @@ jobs:
     name: Test
     uses: theholocron/.github/.github/workflows/test.yml@main
     with:
-      run-unit: false
-      run-storybook: true
-      run-interaction: false
-      run-user-flow: true
+      run-unit: true
       run-chromatic: true
       chromatic-projects: '[{"tokenName":"PACKAGE_B","workingDir":"packages/package-b"}]'
     secrets: inherit
