@@ -15,28 +15,17 @@ export default defineConfig({
 		"A modern React component library template for monorepos with pre-configured tools, best practices, and CI/CD setup for rapid project development.",
 	homepage: "https://docs.theholocron.dev/monorepo-react-template/",
 	repo: {
+		...preset.repo,
 		name: "theholocron/monorepo-react-template",
 		teams: [{ slug: "gatekeepers", permission: "maintain" }],
 		topics: ["monorepo", "pnpm", "react", "template", "typescript", "vite"],
-		...preset.repo,
-		requiredChecks: [
-			...(preset.repo.requiredChecks ?? []),
-			"Test / Run Storybook interaction tests",
-			"Test / Test Interactions and Accessibility",
-			"Test / Test User Flow (1)",
-			"Test / Test User Flow (2)",
-			"Test / Test Visual and Composition (PACKAGE_B)",
-			"audit / Audit the bundle size",
-			"audit / Audit the performance",
-			"codecov/patch/package-b",
-		],
 		properties: {
-			...preset.repo.properties,
+			...preset.repo?.properties,
 			uses_external_packages: false,
 		},
 	},
-	workflows: [
-		...preset.workflows,
+	tasks: [
+		...preset.tasks,
 		{
 			name: "test",
 			with: {
@@ -54,6 +43,17 @@ export default defineConfig({
 				storybook: [{ name: "package-b", path: "packages/package-b" }],
 			},
 		},
+	],
+	extraRequiredChecks: [
+		...(preset.extraRequiredChecks ?? []),
+		"Test / Run Storybook interaction tests",
+		"Test / Test Interactions and Accessibility",
+		"Test / Test User Flow (1)",
+		"Test / Test User Flow (2)",
+		"Test / Test Visual and Composition (PACKAGE_B)",
+		"audit / Audit the bundle size",
+		"audit / Audit the performance",
+		"codecov/patch/package-b",
 	],
 	providers: {
 		...preset.providers,

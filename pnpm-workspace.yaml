@@ -24,7 +24,7 @@ catalog:
   '@testing-library/jest-dom': ^7.0.1
   '@testing-library/react': ^16.3.2
   '@testing-library/user-event': ^14.6.5
-  '@theholocron/docs-theme': ^1.7.4
+  '@theholocron/docs-theme': ^1.10.1
   '@types/react': ^19.2.18
   '@types/react-dom': ^19.2.4
   '@vitejs/plugin-react': ^6.1.0
@@ -62,21 +62,21 @@ catalog:
 # Shared configs — release in lockstep; bump all entries together.
 catalogs:
   configs:
-    '@theholocron/astro-config': ^7.26.0
-    '@theholocron/commitlint-config': ^7.26.0
-    '@theholocron/eslint-config': ^7.23.2
-    '@theholocron/holocron-config': ^7.31.0
-    '@theholocron/lighthouse-config': ^7.26.0
-    '@theholocron/lint-staged-config': ^7.26.0
-    '@theholocron/prettier-config': ^7.19.1
-    '@theholocron/semantic-release-config': ^7.26.0
-    '@theholocron/tsconfig': ^7.19.1
-    '@theholocron/tsdown-config': ^7.26.0
-    '@theholocron/vitest-config': ^7.19.1
+    '@theholocron/astro-config': ^8.2.0
+    '@theholocron/commitlint-config': ^8.2.0
+    '@theholocron/eslint-config': ^8.2.0
+    '@theholocron/holocron-config': ^8.2.0
+    '@theholocron/lighthouse-config': ^8.2.0
+    '@theholocron/lint-staged-config': ^8.2.0
+    '@theholocron/prettier-config': ^8.2.0
+    '@theholocron/semantic-release-config': ^8.2.0
+    '@theholocron/tsconfig': ^8.2.0
+    '@theholocron/tsdown-config': ^8.2.0
+    '@theholocron/vitest-config': ^8.2.0
 
   holocron:
-    '@theholocron/cli': ^3.48.0
-    '@theholocron/holocron-plugin-github': ^3.48.0
+    '@theholocron/cli': ^4.16.3
+    '@theholocron/holocron-plugin-github': ^4.16.3
 
 onlyBuiltDependencies:
   - cypress
