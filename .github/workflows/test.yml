@@ -1,7 +1,7 @@
 # AUTO-GENERATED — do not edit directly.
-# Source:  theholocron/holocron · packages/cli/src/commands/setup-workflows.ts
-# Tool:    holocron setup
-# Changes: run `holocron setup` to regenerate.
+# Source:  theholocron/holocron · packages/cli/src/commands/sync.ts
+# Tool:    holocron sync
+# Changes: edit source in theholocron/holocron
 name: Test
 
 on: # yamllint disable-line rule:truthy
@@ -25,8 +25,7 @@ jobs:
     with:
       run-unit: false
       run-storybook: true
-      run-interaction: false
-      run-user-flow: true
+      run-interaction: true
       run-chromatic: true
       chromatic-projects: '[{"tokenName":"PACKAGE_B","workingDir":"packages/package-b"}]'
     secrets: inherit

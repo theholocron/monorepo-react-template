@@ -8,7 +8,13 @@ import {
 	wikiCapability as wiki,
 } from "@theholocron/holocron-config";
 
-const preset = compose(node(), typecheck(), react(), monorepo(), wiki());
+const preset = compose(
+	node(),
+	typecheck(),
+	react({ test: { "run-chromatic": { projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }] } } }),
+	monorepo(),
+	wiki()
+);
 export default defineConfig({
 	...preset,
 	description:
@@ -26,14 +32,6 @@ export default defineConfig({
 	},
 	tasks: [
 		...preset.tasks,
-		{
-			name: "test",
-			with: {
-				"run-chromatic": {
-					projects: [{ tokenName: "PACKAGE_B", workingDir: "packages/package-b" }],
-				},
-			},
-		},
 		{ name: "release", with: { "run-build": true } },
 		"sync",
 		{
