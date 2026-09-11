@@ -4,34 +4,34 @@ packages:
 
 # Shared dep versions for this repo.
 catalog:
-  '@astrojs/starlight': ^0.41.10
-  '@chromatic-com/storybook': ^5.3.0
-  '@commitlint/cli': ^21.2.2
-  '@commitlint/config-conventional': ^21.2.2
-  '@eslint/js': ^10.0.0
-  '@semantic-release/changelog': ^7.0.0
-  '@semantic-release/exec': ^7.1.0
-  '@semantic-release/git': ^11.0.1
-  '@semantic-release/github': ^12.0.9
-  '@storybook/addon-a11y': ^10.5.10
-  '@storybook/addon-coverage': ^3.0.2
-  '@storybook/addon-designs': ^11.1.4
-  '@storybook/addon-docs': ^10.5.10
-  '@storybook/addon-links': ^10.5.10
-  '@storybook/addon-themes': ^10.5.10
-  '@storybook/addon-vitest': ^10.5.10
-  '@storybook/react-vite': ^10.5.10
-  '@testing-library/jest-dom': ^7.0.1
-  '@testing-library/react': ^16.3.2
-  '@testing-library/user-event': ^14.6.5
-  '@theholocron/docs-theme': ^1.10.1
-  '@types/react': ^19.2.18
-  '@types/react-dom': ^19.2.4
-  '@vitejs/plugin-react': ^6.1.0
-  '@vitest/browser': ^4.1.10
-  '@vitest/browser-playwright': ^4.1.10
-  '@vitest/coverage-v8': ^4.1.10
-  '@vitest/eslint-plugin': ^1.6.27
+  "@astrojs/starlight": ^0.41.10
+  "@chromatic-com/storybook": ^5.3.0
+  "@commitlint/cli": ^21.2.2
+  "@commitlint/config-conventional": ^21.2.2
+  "@eslint/js": ^10.0.0
+  "@semantic-release/changelog": ^7.0.0
+  "@semantic-release/exec": ^7.1.0
+  "@semantic-release/git": ^11.0.1
+  "@semantic-release/github": ^12.0.9
+  "@storybook/addon-a11y": ^10.5.10
+  "@storybook/addon-coverage": ^3.0.2
+  "@storybook/addon-designs": ^11.1.4
+  "@storybook/addon-docs": ^10.5.10
+  "@storybook/addon-links": ^10.5.10
+  "@storybook/addon-themes": ^10.5.10
+  "@storybook/addon-vitest": ^10.5.10
+  "@storybook/react-vite": ^10.5.10
+  "@testing-library/jest-dom": ^7.0.1
+  "@testing-library/react": ^16.3.2
+  "@testing-library/user-event": ^14.6.5
+  "@theholocron/docs-theme": ^1.10.1
+  "@types/react": ^19.2.18
+  "@types/react-dom": ^19.2.4
+  "@vitejs/plugin-react": ^6.1.0
+  "@vitest/browser": ^4.1.10
+  "@vitest/browser-playwright": ^4.1.10
+  "@vitest/coverage-v8": ^4.1.10
+  "@vitest/eslint-plugin": ^1.6.27
   astro: ^7.2.9
   conventional-changelog-conventionalcommits: ^10.4.0
   cypress: ^15.20.0
@@ -62,21 +62,21 @@ catalog:
 # Shared configs — release in lockstep; bump all entries together.
 catalogs:
   configs:
-    '@theholocron/astro-config': ^8.2.0
-    '@theholocron/commitlint-config': ^8.2.0
-    '@theholocron/eslint-config': ^8.2.0
-    '@theholocron/holocron-config': ^8.2.0
-    '@theholocron/lighthouse-config': ^8.2.0
-    '@theholocron/lint-staged-config': ^8.2.0
-    '@theholocron/prettier-config': ^8.2.0
-    '@theholocron/semantic-release-config': ^8.2.0
-    '@theholocron/tsconfig': ^8.2.0
-    '@theholocron/tsdown-config': ^8.2.0
-    '@theholocron/vitest-config': ^8.2.0
+    "@theholocron/astro-config": ^8.2.0
+    "@theholocron/commitlint-config": ^8.2.0
+    "@theholocron/eslint-config": ^8.2.0
+    "@theholocron/holocron-config": ^8.2.0
+    "@theholocron/lighthouse-config": ^8.2.0
+    "@theholocron/lint-staged-config": ^8.2.0
+    "@theholocron/prettier-config": ^8.2.0
+    "@theholocron/semantic-release-config": ^8.2.0
+    "@theholocron/tsconfig": ^8.2.0
+    "@theholocron/tsdown-config": ^8.2.0
+    "@theholocron/vitest-config": ^8.2.0
 
   holocron:
-    '@theholocron/cli': ^4.16.3
-    '@theholocron/holocron-plugin-github': ^4.16.3
+    "@theholocron/cli": ^4.16.3
+    "@theholocron/holocron-plugin-github": ^4.16.3
 
 onlyBuiltDependencies:
   - cypress
