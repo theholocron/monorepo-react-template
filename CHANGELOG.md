@@ -1,3 +1,14 @@
+## [1.5.1](https://github.com/theholocron/monorepo-react-template/compare/v1.5.0...v1.5.1) (2026-09-11)
+
+### Bug Fixes
+
+* **hooks:** 🐛 scope pre-commit GitLeaks scan to staged changes ([#56](https://github.com/theholocron/monorepo-react-template/issues/56)) ([af71a52](https://github.com/theholocron/monorepo-react-template/commit/af71a52ce6d12382b67c16632a620aaaba2443fe))
+
+### Chores
+
+* ⬆️ migrate to @theholocron/cli 4.16.2 + holocron-config 8.x ([#52](https://github.com/theholocron/monorepo-react-template/issues/52)) ([c3d0fcc](https://github.com/theholocron/monorepo-react-template/commit/c3d0fccfc29ff311cbad523522f1a0918affa4dc)), closes [#647](https://github.com/theholocron/monorepo-react-template/issues/647) [#652](https://github.com/theholocron/monorepo-react-template/issues/652)
+* 🔧 holocron setup — ruleset + workflow/config sync ([#54](https://github.com/theholocron/monorepo-react-template/issues/54)) ([ac619d0](https://github.com/theholocron/monorepo-react-template/commit/ac619d00a47ccde3647c5263ec980b45046b9210)), closes [#647](https://github.com/theholocron/monorepo-react-template/issues/647) [#649](https://github.com/theholocron/monorepo-react-template/issues/649) [#649](https://github.com/theholocron/monorepo-react-template/issues/649) [#647](https://github.com/theholocron/monorepo-react-template/issues/647)
+
 ## [1.5.0](https://github.com/theholocron/monorepo-react-template/compare/v1.4.0...v1.5.0) (2026-09-06)
 
 ### Features
