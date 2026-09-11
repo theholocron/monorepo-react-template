@@ -28,7 +28,7 @@ const config: Linter.Config[] = [
 			// storybook/no-uninstalled-addons resolves package.json from process.cwd()
 			// (the workspace root), not from this package directory. Point it at the
 			// correct package.json so it finds the Storybook devDependencies here.
-			"storybook/no-uninstalled-addons": ["error", { packageJsonLocation: "./packages/package-b/package.json" }],
+			"storybook/no-uninstalled-addons": ["error", { packageJsonLocation: "./package.json" }],
 		},
 	},
 	{ ignores: ["dist/**", "coverage/**"] },
