@@ -1,3 +1,9 @@
+## [1.5.2](https://github.com/theholocron/monorepo-react-template/compare/v1.5.1...v1.5.2) (2026-09-12)
+
+### Bug Fixes
+
+* 🐛 rename yamllint.config.yml to .yamllint.yml for auto-detection ([#57](https://github.com/theholocron/monorepo-react-template/issues/57)) ([384e589](https://github.com/theholocron/monorepo-react-template/commit/384e589629a8a2b0d692b235c301660765362e02))
+
 ## [1.5.1](https://github.com/theholocron/monorepo-react-template/compare/v1.5.0...v1.5.1) (2026-09-11)
 
 ### Bug Fixes
