@@ -4,8 +4,8 @@ packages:
 
 # Shared dep versions for this repo.
 catalog:
-  "@astrojs/starlight": ^0.41.10
-  "@chromatic-com/storybook": ^5.3.0
+  "@astrojs/starlight": ^0.42.2
+  "@chromatic-com/storybook": ^5.3.1
   "@commitlint/cli": ^21.2.2
   "@commitlint/config-conventional": ^21.2.2
   "@eslint/js": ^10.0.0
@@ -13,18 +13,18 @@ catalog:
   "@semantic-release/exec": ^7.1.0
   "@semantic-release/git": ^11.0.1
   "@semantic-release/github": ^12.0.9
-  "@storybook/addon-a11y": ^10.5.10
+  "@storybook/addon-a11y": ^10.6.0
   "@storybook/addon-coverage": ^3.0.2
   "@storybook/addon-designs": ^11.1.4
-  "@storybook/addon-docs": ^10.5.10
-  "@storybook/addon-links": ^10.5.10
-  "@storybook/addon-themes": ^10.5.10
-  "@storybook/addon-vitest": ^10.5.10
-  "@storybook/react-vite": ^10.5.10
+  "@storybook/addon-docs": ^10.6.0
+  "@storybook/addon-links": ^10.6.0
+  "@storybook/addon-themes": ^10.6.0
+  "@storybook/addon-vitest": ^10.6.0
+  "@storybook/react-vite": ^10.6.0
   "@testing-library/jest-dom": ^7.0.1
-  "@testing-library/react": ^16.3.2
-  "@testing-library/user-event": ^14.6.5
-  "@theholocron/docs-theme": ^1.10.1
+  "@testing-library/react": ^16.3.3
+  "@testing-library/user-event": ^14.6.7
+  "@theholocron/docs-theme": ^1.10.3
   "@types/react": ^19.2.18
   "@types/react-dom": ^19.2.4
   "@vitejs/plugin-react": ^6.1.0
@@ -32,20 +32,20 @@ catalog:
   "@vitest/browser-playwright": ^4.1.10
   "@vitest/coverage-v8": ^4.1.10
   "@vitest/eslint-plugin": ^1.6.27
-  astro: ^7.2.9
+  astro: ^7.3.3
   conventional-changelog-conventionalcommits: ^10.4.0
   cypress: ^15.20.0
-  eslint: ^10.9.1
+  eslint: ^10.10.0
   eslint-plugin-cypress: ^7.0.0
   eslint-plugin-n: ^18.2.2
   eslint-plugin-react: ^7.37.5
   eslint-plugin-simple-import-sort: ^14.0.0
   eslint-plugin-storybook: ^10.5.8
-  globals: ^17.11.0
+  globals: ^17.12.0
   husky: ^9.1.7
   jsdom: ^30.0.1
-  knip: ^6.33.0
-  lint-staged: ^17.4.1
+  knip: ^6.37.0
+  lint-staged: ^17.5.1
   playwright: ^1.62.1
   prettier: ^3.6.2
   react: ^19.2.8
@@ -54,7 +54,7 @@ catalog:
   sort-package-json: ^4.0.0
   storybook: ^10.5.8
   typescript: ^5.9.3
-  typescript-eslint: ^8.68.0
+  typescript-eslint: ^8.70.0
   vite: ^8.2.2
   vite-plugin-dts: ^5.0.3
   vitest: ^4.1.10
@@ -62,21 +62,21 @@ catalog:
 # Shared configs — release in lockstep; bump all entries together.
 catalogs:
   configs:
-    "@theholocron/astro-config": ^8.2.0
-    "@theholocron/commitlint-config": ^8.2.0
+    "@theholocron/astro-config": ^8.2.4
+    "@theholocron/commitlint-config": ^8.2.4
     "@theholocron/eslint-config": ^8.2.0
-    "@theholocron/holocron-config": ^8.2.0
-    "@theholocron/lighthouse-config": ^8.2.0
-    "@theholocron/lint-staged-config": ^8.2.0
+    "@theholocron/holocron-config": ^8.2.4
+    "@theholocron/lighthouse-config": ^8.2.4
+    "@theholocron/lint-staged-config": ^8.2.4
     "@theholocron/prettier-config": ^8.2.0
-    "@theholocron/semantic-release-config": ^8.2.0
+    "@theholocron/semantic-release-config": ^8.2.4
     "@theholocron/tsconfig": ^8.2.0
-    "@theholocron/tsdown-config": ^8.2.0
+    "@theholocron/tsdown-config": ^8.2.4
     "@theholocron/vitest-config": ^8.2.0
 
   holocron:
-    "@theholocron/cli": ^4.16.3
-    "@theholocron/holocron-plugin-github": ^4.16.3
+    "@theholocron/cli": ^4.19.0
+    "@theholocron/holocron-plugin-github": ^4.19.0
 
 onlyBuiltDependencies:
   - cypress
