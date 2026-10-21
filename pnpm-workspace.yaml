@@ -55,9 +55,9 @@ catalog:
   storybook: ^10.5.8
   typescript: ^5.9.3
   typescript-eslint: ^8.68.0
-  vite: ^8.2.2
+  vite: ^8.2.4
   vite-plugin-dts: ^5.0.3
-  vitest: ^4.1.10
+  vitest: ^5.0.5
 
 # Shared configs — release in lockstep; bump all entries together.
 catalogs:
