@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/theholocron/monorepo-react-template.git"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "author": "Newton Koumantzelis",
   "type": "module",
   "workspaces": [
