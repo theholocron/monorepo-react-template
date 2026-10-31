@@ -11,7 +11,7 @@
   "homepage": "https://github.com/theholocron/monorepo-react-template/tree/main/packages/package-b#readme",
   "bugs": "https://github.com/theholocron/monorepo-react-template/issues",
   "repository": "github:theholocron/monorepo-react-template",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "author": "Newton Koumantzelis",
   "sideEffects": false,
   "type": "module",
